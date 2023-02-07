@@ -2,7 +2,7 @@ import React from 'react'
 
 function AboutMe() {
   return (
-    <div className='flex flex-col gap-20 w-screen px-36 h-[33rem] pt-8'>
+    <div id='Get to know me!' className='flex flex-col gap-20 w-screen px-36 h-[33rem] pt-8'>
         <div className='flex justify-center'>
         <h1 className='text-3xl font bold'>About me</h1>
         </div>

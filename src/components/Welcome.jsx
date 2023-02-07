@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import  image from "../assets/light-background.svg";
+import cursor from "../assets/cursor-click.svg";
 import CvIcon from '../assets/CvIcon';
 import GithubIcon from '../assets/GithubIcon';
 import LinkedInIcon from '../assets/LinkedIn-icon';
@@ -12,42 +13,29 @@ function Welcome() {
 
   const [textEffect, setTextEffect] = useState(false)
   
-    function getTitleLayer(phrase){
-      let replaceSpace = phrase.replace(" ","/")
-      let arrayLetters = replaceSpace.split("");
-      return arrayLetters;
-    }
-
-
-
-
-  
-
-
   return (
-    <div className='w-screen flex flex-col ' style={{backgroundImage:`url(${image})`}}>
-    <div className=' flex items-center min-h-[28rem] gap-24 -md:justify-center' >
-        <div className=' flex flex-col gap-5 p-5 -md:hidden'>
+    <div id='Home' className='w-screen flex flex-col ' style={{backgroundImage:`url(${image})`}}>
+    <div className=' flex items-center min-h-[29rem]  ' >
+        <div className=' lg:flex lg:flex-col lg:gap-5 lg:p-5 hidden '>
            <LinkedInIcon />
             <GithubIcon/>
             <CvIcon/>
         </div>
-        <div className='flex flex-col gap-8 justify-center  -md:text-center'>
+        <div className='lg:flex lg:flex-col lg:gap-7 flex flex-col gap-8 m-auto '>
           <div className='flex'>
-          {getTitleLayer("MAURICIO MURDOCH").map((item,i)=>(<button onClick={()=>setTextEffect(!textEffect)} className={`relative text-secondary m-1 text-7xl font-bold before:content-["${item}"] before:text-error before:absolute ${textEffect ? "before:bottom-2 before:right-2" : ""} `} key={i}>{item}</button>))}
+          <button onClick={()=>setTextEffect(!textEffect)} className={` z-0 hover:cursor-loading relative text-secondary lg:text-7xl text-2xl font-bold before:content-["MAURICIO/MURDOCH"] before:text-error before:absolute ${textEffect ? "before:bottom-2 before:right-2" : ""}`}>MAURICIO/MURDOCH</button>
+          
           </div>
-        {/* <h1 className='text-7xl text-black  font-bold'>Hi! I'm Mauricio Murdoch</h1> */}
-        <h1 className='text-4xl  text-secondary font-extrabold'>Front-End React Developer</h1>
-        <div className='-md:justify-center flex'>
+        <h1 className='md:text-4xl text-xl  text-secondary font-extrabold'>Front-End React Developer</h1>
+        <div className='flex justify-center md:flex md:justify-start'>
        
-        <button className=' rounded-md p-3 bg-secondary hover:bg-primary '>Download CV</button>
+        <button className=' rounded-md p-3 bg-secondary hover:bg-primary transition-all '>Download CV</button>
       
         </div>
         </div>
        
-        
     </div>
-        <button className='inline-flex justify-center'><ArrowDown/></button>
+        <span className='inline-flex justify-center'><ArrowDown/></span>
     </div>
   )
 }

@@ -3,8 +3,9 @@ import React, { useState } from "react";
 function Header() {
   const [menu, setMenu] = useState(false);
 
-    const Titles = "font-title font-bold text-md"
-
+    const TitlesWideScreenStyle = "font-title font-bold text-md";
+    const TitlesMobileStyles = `${TitlesWideScreenStyle} font-normal  flex w-screen h-12 items-center justify-end pr-20 hover:text-primary transition-all`
+    const menuItems = ["Home","Get to know me!","Projects","Contact"]
 
 
   return (
@@ -12,29 +13,23 @@ function Header() {
       <header className="w-screen h-[5rem]  flex items-center gap-3 bg-primary  ">
         <div className="flex ml-5 flex-1  gap-6">
           <span className="-lg:hidden ">Icon</span>
-          <h1 className={Titles}>Mauricio murdoch</h1>
+          <h1 className={TitlesWideScreenStyle}>Mauricio murdoch</h1>
         </div>
-        <button onClick={()=>setMenu(!menu)} type="button" className="invisible  -md:visible -md:mr-20  ">
-         {menu ? (<p>X</p>): (<p className={Titles}>Menu</p>)}
+        <button onClick={()=>setMenu(!menu)} type="button" className="flex mr-20 md:hidden">
+         {menu ? (<p>X</p>): (<p className={TitlesWideScreenStyle}>Menu</p>)}
         </button>
-        <div className="flex mr-16 -md:hidden">
+        <div className="md:flex md:mr-16 hidden ">
           <ul className="flex gap-16 ">
-            <li className={`${Titles}`}>Home</li>
-            <li className={`${Titles}`}>Get to know me!</li>
-            <li className={`${Titles}`}>Projects</li>
-            <li className={`${Titles}`}>Contact</li>
+            {menuItems.map((item,i) =>(<li key={i} className={TitlesWideScreenStyle}><a href={`#${item}`}>{item}</a></li>))}
           </ul>
         </div>
       </header>
       {/* Dropdown menu */}
-      <div className={`${menu ? " -lg:visible" : "hidden" }   w-screen  bg-gray2  absolute border flex justify-end `}>
-        <ul className="flex flex-col gap-3  text-right">
-          <li className={`${Titles} flex w-screen h-10 items-center justify-end pr-20`}>Home</li>
-          <li className={`${Titles}`}>Get to know me!</li>
-          <li className={`${Titles}`}>Projects</li>
-          <li className={`${Titles}`}>Contact</li>
+     {menu && (<div className={`md:invisible z-10  w-screen shadow-2xl bg-sky  absolute border  justify-end `}>
+        <ul className="flex flex-col   text-right">
+           {menuItems.map((item,i) =>(<li key={i} className={TitlesMobileStyles}><a href={`#${item}`}>{item}</a></li>))}
         </ul>
-      </div>
+      </div>)} 
       {/* Dropdown menu */}
     </>
   );
