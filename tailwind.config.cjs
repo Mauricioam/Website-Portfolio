@@ -25,7 +25,7 @@ module.exports = {
       },
       fontFamily: {
         'title':['Oxygen', 'sans-serif'],
-        'body':['Oxygen-Regular400']
+        
   
       },
     },
