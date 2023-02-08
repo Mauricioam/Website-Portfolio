@@ -13,10 +13,9 @@ function Header() {
 
   return (
     <>
-      <header className="w-screen h-[5rem]  flex items-center gap-3 bg-primary  ">
+      <header className="w-screen h-[5rem]  flex items-center gap-3 bg-primary  shadow-lg px-20  ">
         <div className="flex ml-5 flex-1  gap-6">
-          <span className="-lg:hidden ">Icon</span>
-          <h1 className="font-title font-bold text-lg">Mauricio murdoch</h1>
+          
         </div>
          <button onClick={()=>setMenu(!menu)} type="button" className="flex mr-20 md:hidden">
          {menu ? (<CloseIcon/>): (<MenuIcon/>)}
