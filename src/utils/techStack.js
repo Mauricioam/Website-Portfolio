@@ -1,0 +1,1 @@
+export const techStack = ["HTML","CSS","JavaScript","React","Redux","SASS","Tailwind","Bootstrap5","Node Basics","Express Basics","PostreSQL Basics","Responsive Design", "SCRUM"]

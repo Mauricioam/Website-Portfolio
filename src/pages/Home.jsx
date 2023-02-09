@@ -13,7 +13,7 @@ function Home() {
         <Welcome/> 
         <AboutMe/> 
         <Projects/> 
-        <Footer/> 
+         <Footer/>  
     </div>
   )
 };

@@ -13,7 +13,7 @@ function Header() {
 
   return (
     <>
-      <header className="w-screen h-[5rem]  flex items-center gap-3 bg-primary  shadow-lg px-20  ">
+      <header className="w-screen h-[5rem]  flex items-center gap-3 bg-primary  shadow-lg   ">
         <div className="flex ml-5 flex-1  gap-6">
           
         </div>
@@ -28,9 +28,9 @@ function Header() {
         </div>
       </header>
       {/* Dropdown menu */}
-     {menu && (<div className={`md:invisible z-10   w-screen shadow-2xl bg-sky  absolute border  justify-end `}>
+     {menu && (<div className={`md:invisible z-10 transition-all   w-screen shadow-2xl bg-sky  absolute border  justify-end `}>
         <ul className="flex flex-col   text-right">
-           {menuItems.map((item,i) =>(<li key={i} className={TitlesMobileStyles}><a href={`#${item}`}>{item}</a></li>))}
+           {menuItems.map((item,i) =>(<li key={i} className={TitlesMobileStyles}><a className="transition-all" onClick={()=>setMenu(!menu)} href={`#${item}`}>{item}</a></li>))}
         </ul>
       </div>)} 
       {/* Dropdown menu */}

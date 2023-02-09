@@ -1,11 +1,11 @@
 import React from 'react';
 
 
-function ComputerFrame({ frameImg, img, width, height, rigth, top}) {
+function ComputerFrame({ frameImg, img}) {
   return (
-    <div className='flex  md:w-4/6 '>
-    <img className='md:flex  md:max-w-[52rem] md:max-h-[52rem] hidden ' src={frameImg} alt="project with computer frame"/>
-     <img className={`md:flex md:relative md:right-[${rigth}rem] md:top-[${top}rem] w-[${width}rem] h-[${height}rem] hidden object-cover`} src={img} alt="project with computer frame"/> 
+  <div className='flex   lg:w-4/6'>
+    <img className='lg:flex  lg:max-w-[52rem] lg:max-h-[52rem] hidden ' src={frameImg} alt="project with computer frame"/>
+     <img className={`lg:flex lg:relative lg:right-[45.7rem] lg:top-[10.3rem] w-[39.3rem] h-[21.7rem] hidden object-cover`} src={img} alt="project with computer frame"/> 
  </div>
   )
 }
