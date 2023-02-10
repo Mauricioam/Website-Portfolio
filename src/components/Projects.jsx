@@ -20,6 +20,7 @@ function Projects() {
             href={item.href}
             description={item.description}
             github={item.github}
+            keyword={item.keyword}
           />
         </div>
       ))}

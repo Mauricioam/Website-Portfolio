@@ -1,10 +1,11 @@
 import React from 'react';
 import Titles from './Titles';
 import { techStack } from '../utils/techStack';
+import { stack } from '../utils/techStack';
 import { aboutMe } from '../utils/aboutMe';
 import MailTo from './MailTo';
 
-const techStackStyles = "text-lg font-bold border px-3 py-2 rounded-md bg-primary shadow-lg text-slate-100"
+ export const techStackStyles = "text-lg font-bold border px-3 py-2 rounded-md bg-primary shadow-lg text-slate-100"
 
 function AboutMe() {
   return (
@@ -21,7 +22,7 @@ function AboutMe() {
         <div className='flex flex-col md:w-[90%]  '>
             <h1 className='text-3xl font-bold  text-center'>Skills</h1>
             <div className='flex gap-2 flex-wrap px-12 py-12 justify-center'>
-             {techStack.map((item,i)=>(<span  key={i} className={techStackStyles}>{item}</span>))}
+              {techStack.map((item,i)=>(<span  key={i} className={techStackStyles}>{item}</span>))}
             </div>
             
         </div> 
