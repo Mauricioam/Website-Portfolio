@@ -14,7 +14,7 @@ function ProjectTitles({ title, href, description , github }) {
         </p>
         <div className='mt-10 flex md:justify-start gap-3 justify-center'>
         <a href={github} target="_blank" className=' hover:cursor-loading text-xl  rounded-xl md:px-10 py-5 px-6 bg-secondary hover:bg-primary transition-all text-slate-300'>GitHub</a>
-        <a href={href} target="_blank" className='flex lg:hidden hover:cursor-loading text-xl  rounded-xl md:px-10 py-5 px-6 bg-secondary hover:bg-primary transition-all text-slate-300'>Demo</a>
+        <a href={href} target="_blank" className='flex xl:hidden hover:cursor-loading text-xl  rounded-xl md:px-10 py-5 px-6 bg-secondary hover:bg-primary transition-all text-slate-300'>Demo</a>
         </div>
         </div>
     </div>
