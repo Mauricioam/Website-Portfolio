@@ -24,7 +24,7 @@ function Footer() {
             </div>
             </section>
             <hr className='solid md:flex hidden'/>
-            <section className='flex gap-2 items-center justify-center pt-10'>
+            <section className='flex gap-2 items-center justify-center md:pt-10 pt-3'>
               <p className='text-lg'>Made with</p>
               <img className='w-8' src={heartIcon} alt="heart-icon" />
               <p className='text-lg'>by <a className='hover:text-slate-100 transition-all'  href="https://www.linkedin.com/in/mauriciomurdoch/">Mauricio Murdoch</a></p>
