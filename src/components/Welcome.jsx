@@ -25,7 +25,7 @@ function Welcome() {
         </div>
         <div className='lg:flex lg:flex-col lg:gap-16 flex flex-col gap-8 m-auto  '>
           <div className='flex justify-center'>
-          <button onMouseEnter={()=>setOnMouseEffect(true)} className={` z-0 hover:cursor-loading relative text-secondary md:text-7xl sm:px-0  sm:text-4xl text-2xl font-bold before:content-["MAURICIO/MURDOCH"] before:text-error before:absolute ${onMouseEffect && "before:-translate-x-2 before:-translate-y-2"} before:transition-transform before:duration-300  }`}>MAURICIO/MURDOCH</button>
+          <p onMouseEnter={()=>setOnMouseEffect(true)} className={` z-0 hover:cursor-loading relative text-secondary md:text-7xl sm:px-0  sm:text-4xl text-2xl font-bold before:content-["MAURICIO/MURDOCH"] before:text-error before:absolute ${onMouseEffect && "before:-translate-x-2 before:-translate-y-2"} before:transition-transform before:duration-300  }`}>MAURICIO/MURDOCH</p>
           
           </div>
         <h1 className='md:text-5xl sm:text-3xl text-2xl text-secondary font-extrabold'>Front-End Developer</h1>
