@@ -2,7 +2,7 @@ import React from 'react';
 import { techStackStyles } from './AboutMe';
 
 function ProjectTitles({ title, href, description , github, keyword }) {
-  console.log(keyword);
+
   return (
     <div className='flex flex-col'>
     <a class=' group transition-all duration-300 ease-in-out text-center text-3xl' target="_blank" href={href}>
@@ -16,8 +16,8 @@ function ProjectTitles({ title, href, description , github, keyword }) {
         </p>
         <p className='text-xl font-bold'>Keywords: <div className='flex gap-2 flex-wrap items-center'> {keyword?.map((item,i)=>(<span  key={i} className={techStackStyles}>{item}</span>))}</div></p>
         <div className='mt-10 flex md:justify-start gap-3 justify-center'>
-        <a href={github} target="_blank" className=' hover:cursor-loading text-xl  rounded-xl md:px-10 py-5 px-6 bg-secondary hover:bg-primary transition-all text-slate-300'>GitHub</a>
-        <a href={href} target="_blank" className='flex xl:hidden hover:cursor-loading text-xl  rounded-xl md:px-10 py-5 px-6 bg-secondary hover:bg-primary transition-all text-slate-300'>Demo</a>
+        <a href={github} target="_blank" className=' hover:cursor-loading text-xl  rounded-xl md:px-10 py-5 px-6  bg-secondary hover:bg-gray1 transition-all text-slate-100'>GitHub</a>
+        <a href={href} target="_blank" className='flex xl:hidden hover:cursor-loading text-xl  rounded-xl md:px-10 py-5 px-6  bg-secondary hover:bg-gray1 transition-all text-slate-100'>Demo</a>
         </div>
         </div>
     </div>

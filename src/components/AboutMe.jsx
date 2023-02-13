@@ -5,7 +5,7 @@ import { aboutMe } from '../utils/aboutMe';
 import MailTo from './MailTo';
 import ButtonAboutMe from './ButtonAboutMe';
 
- export const techStackStyles = "text-lg font-bold border px-3 py-2 rounded-md bg-primary"
+ export const techStackStyles = " bg-sky text-lg font-bold border px-3 py-2 rounded-md bg-primary"
 
 function AboutMe() {
   return (
@@ -16,7 +16,7 @@ function AboutMe() {
             <h1 className='text-3xl text-center font-bold pb-5'>{aboutMe.title}</h1>
             <p className='text-2xl text-justify text-gray-600 px-12 py-12 '>{aboutMe.description}</p>
               <MailTo>
-              <button className='text-xl mb-7  rounded-md md:p-5 p-3 bg-secondary hover:bg-primary transition-all text-slate-300 '>Send me a message</button>
+              <button className='text-xl mb-7  rounded-md md:p-5 p-3 bg-secondary hover:bg-gray1 transition-all text-slate-100 '>Send me a message</button>
               </MailTo>
         </div>
         <div className='flex flex-col w-screen  '>
