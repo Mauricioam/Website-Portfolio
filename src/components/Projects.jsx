@@ -9,7 +9,7 @@ function Projects() {
   return (
     <div
       id="Projects"
-      className="flex flex-col  w-screen md:px-20   "
+      className="flex flex-col  w-screen    "
     >
       <Titles title="Projects" />
       {projectsDescription.map((item, i) => (

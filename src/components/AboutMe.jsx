@@ -5,7 +5,7 @@ import { aboutMe } from '../utils/aboutMe';
 import MailTo from './MailTo';
 import ButtonAboutMe from './ButtonAboutMe';
 
- export const techStackStyles = " bg-sky text-lg font-bold border px-3 py-2 rounded-md bg-primary"
+ export const techStackStyles = " bg-sky text-lg font-bold border px-3 py-2 rounded-md"
 
 function AboutMe() {
   return (
