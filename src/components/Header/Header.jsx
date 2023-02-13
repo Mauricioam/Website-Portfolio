@@ -30,7 +30,7 @@ function Header() {
       {/* Dropdown menu */}
      {menu && (<div className={`md:invisible z-10 transition-all   w-screen shadow-2xl bg-sky  absolute border  justify-end `}>
         <ul className="flex flex-col   text-right">
-           {menuItems.map((item,i) =>(<li key={i} className={TitlesMobileStyles}><a className="transition-all" onClick={()=>setMenu(!menu)} href={`#${item}`}>{item}</a></li>))}
+           {menuItems.map((item,i) =>(<li key={i} className={TitlesMobileStyles}><a className="transition-all text-dark1 hover:text-primary" onClick={()=>setMenu(!menu)} href={`#${item}`}>{item}</a></li>))}
         </ul>
       </div>)} 
       {/* Dropdown menu */}

@@ -28,7 +28,7 @@ function Welcome() {
           <p onMouseEnter={()=>setOnMouseEffect(true)} className={` z-0 hover:cursor-loading relative text-gray1 md:text-7xl sm:px-0  sm:text-4xl text-2xl font-bold before:content-["MAURICIO/MURDOCH"] before:text-sky before:absolute ${onMouseEffect && "before:-translate-x-2 before:-translate-y-2"} before:transition-transform before:duration-300  }`}>MAURICIO/MURDOCH</p>
           
           </div>
-        <h1 className='md:text-5xl sm:text-3xl text-2xl text-secondary font-extrabold'>Front-End Developer</h1>
+        <h1 className='md:text-5xl sm:text-3xl text-2xl text-sky font-extrabold'>Frontend Developer</h1>
         <div className='flex justify-center md:flex md:justify-start'>
         <a href={"https://drive.google.com/file/d/1EYgkb4UNAcunKJCyqJ23BMqMLcmp2Ssb/view?usp=share_link"} target="_blank">
         <button className='text-xl  rounded-md md:p-5 p-3 bg-key_black hover:bg-dark_shade transition-all text-sky '>Download Resume</button>
