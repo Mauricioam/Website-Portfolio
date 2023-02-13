@@ -6,7 +6,7 @@ import MenuIcon from "../../assets/MenuIcon";
 function Header() {
   const [menu, setMenu] = useState(false);
 
-    const TitlesWideScreenStyle = "font-title text-lg font-bold text-md hover:text-secondary hover:transition-all";
+    const TitlesWideScreenStyle = " text-sky font-title text-lg font-bold text-md hover:text-text3 hover:transition-all";
     const TitlesMobileStyles = `${TitlesWideScreenStyle} font-bold border  flex w-screen h-12 items-center justify-end pr-20 hover:text-primary transition-all`
     const menuItems = ["Home","Get to know me!","Projects"]
 
