@@ -30,7 +30,7 @@ function Welcome() {
           </div>
         <h1 className='md:text-5xl sm:text-3xl text-2xl text-sky font-extrabold'>Frontend Developer</h1>
         <div className='flex justify-center md:flex md:justify-start'>
-        <a href={"https://drive.google.com/file/d/1puHsZ1ufWOtEVJqpWbo1nlKj1r2ksNui/view"} target="_blank">
+        <a href={"https://drive.google.com/file/d/1etuibr8vx22sh4Y0Ij8nP4FikGG2X911/view?usp=share_link"} target="_blank">
         <button className='text-xl  rounded-md md:p-5 p-3 bg-key_black hover:bg-dark_shade transition-all text-sky '>Download Resume</button>
         </a>
         </div>
