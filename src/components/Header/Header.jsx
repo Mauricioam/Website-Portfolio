@@ -7,12 +7,11 @@ function Header() {
   const [menu, setMenu] = useState(false);
 
     const TitlesWideScreenStyle = " text-sky font-title text-lg font-bold text-md hover:text-text3 hover:transition-all";
-    const TitlesMobileStyles = `${TitlesWideScreenStyle} font-bold   w-full  pr-20 hover:text-primary `
+    const TitlesMobileStyles = `${TitlesWideScreenStyle} font-bold  pr-20 h-[3.8rem] flex justify-end items-center  hover:text-primary `
     const menuItems = ["Home","Get to know me!","Projects"]
 
 
   return (
-    <>
       <header className="w-screen h-[5rem]  flex items-center gap-3 bg-primary  shadow-lg   ">
         <div className="flex ml-5 flex-1  gap-6">
           
@@ -27,14 +26,11 @@ function Header() {
           </ul>
         </div>
       {/* Dropdown menu */}
-     <div className={`md:hidden z-10  ${menu ? "h-40":"invisible"} h-0  transition-all duration-500  top-20   w-screen shadow-2xl bg-sky  absolute border  justify-end `}>
-        <ul className={`${menu ? "flex divide-y divide-solid translate-y-0 transition-transform duration-500 h-full ":"-translate-y-10 transition-transform duration-500 "} z-0 flex-col  gap-4 h-full text-right justify-center`}>
+        <ul className={` ${menu ? "h-[12rem]":"hidden"} md:hidden  z-10 top-20   shadow-2xl bg-sky   absolute    divide-y-2 flex-col text-right  w-screen`}>
            {menuItems.map((item,i) =>(<li key={i} className={TitlesMobileStyles}><a className="transition-all text-dark1 hover:text-primary" onClick={()=>setMenu(!menu)} href={`#${item}`}>{item}</a></li>))}
         </ul>
-      </div>
       {/* Dropdown menu */}
       </header>
-    </>
   );
 }
 
