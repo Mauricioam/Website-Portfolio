@@ -4,6 +4,7 @@ import CvIcon from '../assets/CvIcon';
 import GithubIcon from '../assets/GithubIcon';
 import LinkedInIcon from '../assets/LinkedIn-icon';
 import ArrowDown from '../assets/ArrowDown';
+import { resumeLink } from '../utils/techStack';
 
 
 
@@ -30,7 +31,7 @@ function Welcome() {
           </div>
         <h1 className='md:text-5xl sm:text-3xl text-2xl text-sky font-extrabold'>Frontend Developer</h1>
         <div className='flex justify-center md:flex md:justify-start'>
-        <a href={"https://drive.google.com/file/d/1NONMV1Dcnb5CDYj5qfhGWC94ow3gtR4T/view?usp=share_link"} target="_blank">
+        <a href={resumeLink} target="_blank">
         <button className='text-xl  rounded-md md:p-5 p-3 bg-key_black hover:bg-dark_shade transition-all text-sky '>Download Resume</button>
         </a>
         </div>
